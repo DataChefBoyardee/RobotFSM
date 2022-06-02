@@ -1,15 +1,7 @@
 # RobotFSM
 A very simple robot finite state machine programmed into a ZedBoard Zynq-7000 FPGA.
 
----------------------------------------------
-+-----------------++-----+
-¦+-+¦+--¦+-+¦+++¦¦++¦¦+--+
-¦+-+¦+--¦¦-¦¦¦¦¦¦++++¦+--+
-¦+++¦+--¦+-+¦¦¦¦¦¦¦¦¦¦+--+
-¦¦¦+¦+--¦+-+¦+++¦¦¦¦¦¦+--+
-+++------+-+-----++++----+
----------------------------------------------
-Groupmembers: Patrick Cook and Josue Lugo
+Contributors: Patrick Cook and Josue Lugo
 
 If you have Vivado installed, it is possible to test just the robot FSM. You must use the sources
 in the folder /FPGA_Final_Project_Stage_1_and_2 in order to simulate the robot. Simply add the sources
