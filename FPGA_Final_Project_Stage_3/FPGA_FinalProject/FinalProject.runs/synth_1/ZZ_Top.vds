@@ -1,0 +1,576 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Mon May  2 19:17:13 2022
+# Process ID: 23144
+# Current directory: C:/Users/J/Desktop/FPGA FinalProject/FinalProject.runs/synth_1
+# Command line: vivado.exe -log ZZ_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ZZ_Top.tcl
+# Log file: C:/Users/J/Desktop/FPGA FinalProject/FinalProject.runs/synth_1/ZZ_Top.vds
+# Journal file: C:/Users/J/Desktop/FPGA FinalProject/FinalProject.runs/synth_1\vivado.jou
+# Running On: DESKTOP-QTVT23F, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16969 MB
+#-----------------------------------------------------------
+source ZZ_Top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Xilinx/Vivado/Projects/FinalProject/FinalProject.srcs/utils_1/imports/synth_1/ZZ_Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Xilinx/Vivado/Projects/FinalProject/FinalProject.srcs/utils_1/imports/synth_1/ZZ_Top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ZZ_Top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23640
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1564.875 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ZZ_Top' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ZZ_Top.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/debouncer.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/debouncer.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/edge_detector.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/edge_detector.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'oled_ctrl' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ctrl.vhd:34]
+INFO: [Synth 8-3491] module 'oled_init' declared at 'C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_init.vhd:13' bound to instance 'Initialize' of component 'oled_init' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ctrl.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'oled_init' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_init.vhd:26]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at 'C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_init.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'spi_ctrl' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/spi_ctrl.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'spi_ctrl' (3#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/spi_ctrl.vhd:24]
+INFO: [Synth 8-3491] module 'delay' declared at 'C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_init.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'delay' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'delay' (4#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'oled_init' (5#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_init.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'oled_ex' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ex.vhd:30]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at 'C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ex.vhd:168]
+INFO: [Synth 8-3491] module 'delay' declared at 'C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ex.vhd:177]
+INFO: [Synth 8-3491] module 'ascii_rom' declared at 'C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ascii_rom.vhd:12' bound to instance 'char_lib_comp' of component 'ascii_rom' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ex.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'ascii_rom' [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ascii_rom.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ascii_rom' (6#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ascii_rom.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ex.vhd:200]
+WARNING: [Synth 8-5856] 3D RAM data_screen_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM current_screen_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'oled_ex' (7#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ex.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'oled_ctrl' (8#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/oled_ctrl.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'memory' [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/memory.vhd:49]
+WARNING: [Synth 8-614] signal 'start' is read in the process but is not in the sensitivity list [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/memory.vhd:54]
+WARNING: [Synth 8-614] signal 'goal_x' is read in the process but is not in the sensitivity list [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/memory.vhd:54]
+WARNING: [Synth 8-614] signal 'goal_y' is read in the process but is not in the sensitivity list [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/memory.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'memory' (9#1) [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/memory.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'robotFSM' [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/robotFSM.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element prev_y_reg was removed.  [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/robotFSM.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'robotFSM' (10#1) [C:/Users/J/Desktop/FPGA FinalProject/FinalProject.srcs/sources_1/new/robotFSM.vhd:52]
+WARNING: [Synth 8-5856] 3D RAM oled_screen_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element input_change_reg was removed.  [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ZZ_Top.vhd:283]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ZZ_Top.vhd:563]
+WARNING: [Synth 8-3848] Net goal_x in module/entity ZZ_Top does not have driver. [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ZZ_Top.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'ZZ_Top' (11#1) [C:/Users/J/Desktop/FPGA FinalProject/src-vhdl/ZZ_Top.vhd:80]
+WARNING: [Synth 8-7129] Port start_x[31] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[30] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[29] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[28] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[27] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[26] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[25] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[24] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[23] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[22] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[21] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[20] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[19] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[18] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[17] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[16] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[15] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[14] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[13] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[12] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[11] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[10] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[9] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[8] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[7] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[6] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_x[5] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[31] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[30] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[29] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[28] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[27] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[26] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[25] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[24] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[23] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[22] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[21] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[20] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[19] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[18] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[17] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[16] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[15] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[14] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[13] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[12] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[11] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[10] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[9] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[8] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[7] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[6] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start_y[5] in module robotFSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port done in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[31] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[30] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[29] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[28] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[27] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[26] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[25] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[24] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[23] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[22] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[21] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[20] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[19] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[18] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[17] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[16] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[15] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[14] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[13] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[12] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[11] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[10] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[9] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[8] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[7] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[6] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[5] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[4] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[3] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[2] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[1] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dout_path[0] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[31] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[30] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[29] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[28] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[27] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[26] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[25] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[24] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[23] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[22] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[21] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port moves_mem[20] in module memory is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1598.543 ; gain = 33.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1620.422 ; gain = 55.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1620.422 ; gain = 55.547
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1620.422 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc:366]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc:369]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc:371]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc:376]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc:379]
+Finished Parsing XDC File [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/J/Desktop/FPGA FinalProject/Zedboard-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ZZ_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ZZ_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1686.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1686.062 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1686.062 ; gain = 121.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1686.062 ; gain = 121.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1686.062 ; gain = 121.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'debouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'spi_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'delay'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'oled_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'robotFSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                         00000001 |                              000
+                 wait1_1 |                         00000010 |                              001
+                 wait1_2 |                         00000100 |                              010
+                 wait1_3 |                         00001000 |                              011
+                     one |                         00010000 |                              100
+                 wait0_1 |                         00100000 |                              101
+                 wait0_2 |                         01000000 |                              110
+                 wait0_3 |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'debouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    send |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'spi_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    hold |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                              000
+          oledinitialize |                             0010 |                              001
+             oledexample |                             0100 |                              010
+                  iSTATE |                             1000 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'oled_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init | 000000000000000000000000000000000001 |                           000000
+                 check_n | 000000000000000000000000000000000010 |                           000001
+          update_check_e | 000000000000000000000000000000000100 |                           000110
+             set_check_e | 000000000000000000000000000000001000 |                           000111
+                 check_e | 000000000000000000000000000000010000 |                           000101
+          update_check_s | 000000000000000000000000000000100000 |                           001001
+             set_check_s | 000000000000000000000000000001000000 |                           001010
+                 check_s | 000000000000000000000000000010000000 |                           001000
+          update_check_w | 000000000000000000000000000100000000 |                           001100
+             set_check_w | 000000000000000000000000001000000000 |                           001101
+                 check_w | 000000000000000000000000010000000000 |                           001011
+              update_pos | 000000000000000000000000100000000000 |                           001110
+              update_mem | 000000000000000000000001000000000000 |                           001111
+                 set_mem | 000000000000000000000010000000000000 |                           010000
+                read_mem | 000000000000000000000100000000000000 |                           010001
+         update_check_wb | 000000000000000000001000000000000000 |                           010010
+            set_check_wb | 000000000000000000010000000000000000 |                           010011
+                check_wb | 000000000000000000100000000000000000 |                           010100
+         update_check_sb | 000000000000000001000000000000000000 |                           010101
+            set_check_sb | 000000000000000010000000000000000000 |                           010110
+                check_sb | 000000000000000100000000000000000000 |                           010111
+         update_check_eb | 000000000000001000000000000000000000 |                           011000
+            set_check_eb | 000000000000010000000000000000000000 |                           011001
+                check_eb | 000000000000100000000000000000000000 |                           011010
+         update_check_nb | 000000000001000000000000000000000000 |                           011011
+            set_check_nb | 000000000010000000000000000000000000 |                           011100
+                check_nb | 000000000100000000000000000000000000 |                           011101
+          update_check_n | 000000001000000000000000000000000000 |                           000010
+            read_check_n | 000000010000000000000000000000000000 |                           000011
+             set_check_n | 000000100000000000000000000000000000 |                           000100
+            update_pos_b | 000001000000000000000000000000000000 |                           011110
+            update_mem_b | 000010000000000000000000000000000000 |                           011111
+               set_mem_b | 000100000000000000000000000000000000 |                           100000
+              read_mem_b | 001000000000000000000000000000000000 |                           100001
+             unreachable | 010000000000000000000000000000000000 |                           100011
+              done_state | 100000000000000000000000000000000000 |                           100010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'robotFSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1686.062 ; gain = 121.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 7     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 222   
+	                5 Bit    Registers := 17    
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 30    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 31    
++---RAMs : 
+	              512 Bit	(256 X 2 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	  36 Input   36 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 24    
+	  36 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	  32 Input   12 Bit        Muxes := 1     
+	  32 Input   11 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 12    
+	   2 Input    8 Bit        Muxes := 136   
+	  32 Input    8 Bit        Muxes := 65    
+	   4 Input    8 Bit        Muxes := 33    
+	  24 Input    8 Bit        Muxes := 10    
+	   2 Input    7 Bit        Muxes := 18    
+	  10 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	  28 Input    5 Bit        Muxes := 1     
+	  32 Input    5 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 12    
+	  36 Input    5 Bit        Muxes := 6     
+	   4 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 16    
+	  32 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 59    
+	  24 Input    3 Bit        Muxes := 2     
+	  32 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	  24 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 245   
+	   8 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 19    
+	  28 Input    1 Bit        Muxes := 10    
+	  32 Input    1 Bit        Muxes := 76    
+	  36 Input    1 Bit        Muxes := 10    
+	  24 Input    1 Bit        Muxes := 17    
+	  11 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register temp_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-3332] Sequential element (Initialize/spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module oled_ctrl.
+WARNING: [Synth 8-3332] Sequential element (Initialize/delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module oled_ctrl.
+WARNING: [Synth 8-3332] Sequential element (Example/spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module oled_ctrl.
+WARNING: [Synth 8-3332] Sequential element (Example/delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module oled_ctrl.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[3]) is unused and will be removed from module oled_ctrl.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1686.062 ; gain = 121.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------------------+---------------+----------------+
+|Module Name | RTL Object             | Depth x Width | Implemented As | 
++------------+------------------------+---------------+----------------+
+|oled_init   | after_state            | 32x1          | LUT            | 
+|oled_init   | after_state            | 32x5          | LUT            | 
+|oled_init   | temp_sdata             | 32x1          | LUT            | 
+|oled_init   | temp_sdata             | 32x8          | LUT            | 
+|oled_ex     | after_state            | 32x1          | LUT            | 
+|oled_ex     | temp_addr              | 32x1          | LUT            | 
+|oled_ex     | char_lib_comp/dout_reg | 1024x8        | Block RAM      | 
+|oled_ex     | after_state            | 32x1          | LUT            | 
+|oled_ex     | temp_addr              | 32x1          | LUT            | 
+|oled_ctrl   | Initialize/after_state | 32x5          | LUT            | 
+|oled_ctrl   | Initialize/temp_sdata  | 32x8          | LUT            | 
+|oled_ctrl   | Initialize/after_state | 32x1          | LUT            | 
+|oled_ctrl   | Initialize/temp_sdata  | 32x1          | LUT            | 
++------------+------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|ZZ_Top      | path_reg   | Implied   | 256 x 2              | RAM128X1D x 4  | 
++------------+------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1686.062 ; gain = 121.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1731.793 ; gain = 166.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|ZZ_Top      | path_reg   | Implied   | 256 x 2              | RAM128X1D x 4  | 
++------------+------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance oled/Example/char_lib_comp/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   246|
+|3     |LUT1      |    62|
+|4     |LUT2      |   144|
+|5     |LUT3      |   720|
+|6     |LUT4      |   244|
+|7     |LUT5      |   332|
+|8     |LUT6      |   983|
+|9     |MUXF7     |    63|
+|10    |MUXF8     |    29|
+|11    |RAM128X1D |     4|
+|12    |RAMB18E1  |     1|
+|13    |FDCE      |    84|
+|14    |FDPE      |    12|
+|15    |FDRE      |  1715|
+|16    |FDSE      |   308|
+|17    |IBUF      |    14|
+|18    |OBUF      |    14|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 127 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 1741.852 ; gain = 111.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1741.852 ; gain = 176.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1744.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 343 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1748.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 4 instances
+
+Synth Design complete, checksum: f3791463
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1748.277 ; gain = 183.402
+INFO: [Common 17-1381] The checkpoint 'C:/Users/J/Desktop/FPGA FinalProject/FinalProject.runs/synth_1/ZZ_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ZZ_Top_utilization_synth.rpt -pb ZZ_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  2 19:18:19 2022...

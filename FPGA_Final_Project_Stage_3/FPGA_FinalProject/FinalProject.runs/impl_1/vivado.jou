@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:22 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Mon May  2 19:18:27 2022
+# Process ID: 18152
+# Current directory: C:/Users/J/Desktop/FPGA FinalProject/FinalProject.runs/impl_1
+# Command line: vivado.exe -log ZZ_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ZZ_Top.tcl -notrace
+# Log file: C:/Users/J/Desktop/FPGA FinalProject/FinalProject.runs/impl_1/ZZ_Top.vdi
+# Journal file: C:/Users/J/Desktop/FPGA FinalProject/FinalProject.runs/impl_1\vivado.jou
+# Running On: DESKTOP-QTVT23F, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16969 MB
+#-----------------------------------------------------------
+source ZZ_Top.tcl -notrace

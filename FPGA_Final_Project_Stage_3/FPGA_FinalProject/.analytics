@@ -1,0 +1,6 @@
+timestamp=[2021-05-03 13:17:32], mode=WORKBENCH_START, duration=0:00:04.450, duration_ms=4450, data={}
+timestamp=[2021-05-03 13:17:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.358, duration_ms=358, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2021-05-03 13:17:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.041, duration_ms=41, data={}
+timestamp=[2021-05-03 13:20:03], mode=WORKBENCH_START, duration=0:00:04.144, duration_ms=4144, data={}
+timestamp=[2021-05-03 13:20:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.333, duration_ms=333, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2021-05-03 13:20:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.037, duration_ms=37, data={}
