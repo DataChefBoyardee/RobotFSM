@@ -16,9 +16,9 @@ simulation to test them.
 
 4.) The wave window should now contain the 2D array representing the map and direction the robot follows
 
+-- You will see the either the "done" signal go high if the robot reached its destination, or the "error" signal if it has not.
 -- Further below describes the Stage 3 part of our project. 
 -- Right below this line is the legend refering to how the robot keeps track of areas it has traveled.
--- You will see the either the "done" signal go high if the robot reached its destination, or the "error" signal if it has not.
 
 LEGEND:
 
