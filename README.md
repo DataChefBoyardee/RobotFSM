@@ -21,6 +21,7 @@ around the module so it can communicate with the memory module of the robot.
 The modules are explained in greater detail below:
 
 1.) Memory
+
   This holds the map of the area the robot will traverse, as well as the total number of 
   moves the robot has made, and which direction the robot has moved.
   
@@ -32,6 +33,7 @@ The modules are explained in greater detail below:
   4 = backtracked
   
 2.) Robot FSM
+
   This module contains the FSM handling the decisions of where the robot will move. The robot can
   move in four directions: North, South, East, and West. By default, it will move North regardless
   of where the destination is in relation to where it is moving. When the robot moves, it will replace
