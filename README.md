@@ -15,6 +15,7 @@ simulation to test them.
 3.) Add memory.vhd to the wave window via the scope tab
 
 4.) The wave window should now contain the 2D array representing the map and direction the robot follows
+
 -- Further below describes the Stage 3 part of our project. 
 -- Right below this line is the legend refering to how the robot keeps track of areas it has traveled.
 -- You will see the either the "done" signal go high if the robot reached its destination, or the "error" signal if it has not.
