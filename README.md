@@ -1,5 +1,5 @@
 # RobotFSM
-A very simple robot finite state machine programmed into a ZedBoard Zynq-7000 FPGA.
+A simple robot finite state machine programmed into a ZedBoard Zynq-7000 FPGA.
 
 Contributors: Patrick Cook and Josue Lugo
 
