@@ -19,6 +19,7 @@ display of the Zedboard, one is an FSM that handles input for the display, and a
 around the module so it can communicate with the memory module of the robot.
 
 The modules are explained in greater detail below:
+
 1.) Memory
   This holds the map of the area the robot will traverse, as well as the total number of 
   moves the robot has made, and which direction the robot has moved.
